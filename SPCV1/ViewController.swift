@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var items = self.tabBar.items as! [UITabBarItem]
+        items[0].image = UIImage(named: "home_tabbar_logo")?.imageWithRenderingMode(.AlwaysOriginal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
